@@ -3,7 +3,7 @@ import './App.css';
 import Pontuacao from './Pontuacao';
 
 class App extends Component {
-  constructor(props){
+  constructor(props){ //Está forçando ele a renderizar os elementos
     super(props);
     this.state = {
       time1: '',
@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 
-  reiniciar = () => {
+  reiniciar = () => { //Atualiza diretamente as duas variáveis para zero.
     this.setState({
       time1: 'lalala',
       time2: 'lelele',
@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <div>
       <div className="placar">
-        <Pontuacao cliqueBotao={this.incrementar} nomeDoTime={this.state.time1} gols={this.state.placar1} numero="1"/>
+        <Pontuacao cliqueBotao={this.incrementar} nomeDoTime={this.state.time1} gols={this.state.placar1} numero="1"/> 
         X
         <Pontuacao cliqueBotao={this.incrementar} nomeDoTime={this.state.time2} gols={this.state.placar2} numero="2" visitante="true"/>
       </div>
