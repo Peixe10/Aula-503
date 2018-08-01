@@ -25,8 +25,17 @@
     width: 90px;
     font-size: 20pt;
     font-weight: bolder;
-    color: black;
+    color: white;
     background-color: red;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: none;
+}
+
+.pontuacao .gol:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+
 }
